@@ -29,23 +29,8 @@ services:
       - "6379:6379"
 
   # ==========================================
-  # BASES DE DATOS (SQL Server & Oracle)
+  # BASE DE DATOS (PostgreSQL Única)
   # ==========================================
-  sqlserver:
-    image: mcr.microsoft.com/mssql/server:2022-latest
-    environment:
-      ACCEPT_EULA: "Y"
-      MSSQL_SA_PASSWORD: "mssqlAdmin4132"
-    ports:
-      - "1433:1433"
-
-  oracle:
-    image: gvenzl/oracle-free:23.4-slim
-    environment:
-      ORACLE_PASSWORD: "oracleAdmin4132"
-    ports:
-      - "1521:1521"
-      
   postgres:
     image: postgres:16-alpine
     environment:
@@ -53,4 +38,4 @@ services:
       POSTGRES_PASSWORD: "postgresAdmin4132"
       POSTGRES_DB: "app_db"
     ports:
-      - "5432:5432"
+      - "5433:5432"

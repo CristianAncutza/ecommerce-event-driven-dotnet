@@ -7,6 +7,7 @@ using Order.Infrastructure.Caching;
 using StackExchange.Redis;
 using Order.API.Middlewares;
 using Order.API.Endpoints;
+using Order.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,7 @@ var redisConnectionString = builder.Configuration.GetConnectionString("Redis") ?
 builder.Services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(redisConnectionString));
 
 builder.Services.AddControllers();
-
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Order.Application.Features.Orders.Commands.CreateOrder.CreateOrderCommand).Assembly));
 builder.Services.AddScoped<OrderDbContext>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddSingleton<IEventProducer, KafkaEventProducer>();
@@ -23,6 +24,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
                 options.Configuration = builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379";
                 options.InstanceName = "OrderSystem_";
             });
+builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

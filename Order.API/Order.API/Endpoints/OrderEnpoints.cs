@@ -12,7 +12,7 @@ namespace Order.API.Endpoints
                               .WithTags("Orders");
 
             // Endpoint para crear una orden
-            group.MapPost("/", async (CreateOrderCommand command, ISender sender) =>
+            group.MapPost("/", async (CreateOrderCommand command, [FromServices] ISender sender) =>
             {
                 try
                 {
