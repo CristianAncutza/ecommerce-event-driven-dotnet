@@ -45,3 +45,12 @@ services:
       ORACLE_PASSWORD: "oracleAdmin4132"
     ports:
       - "1521:1521"
+      
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgresAdmin4132"
+      POSTGRES_DB: "app_db"
+    ports:
+      - "5432:5432"

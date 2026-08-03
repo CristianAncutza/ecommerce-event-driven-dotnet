@@ -1,0 +1,16 @@
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\bin\Debug\net9.0\Order.Application.deps.json
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\bin\Debug\net9.0\Order.Application.dll
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\bin\Debug\net9.0\Order.Application.pdb
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\bin\Debug\net9.0\Order.Domain.dll
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\bin\Debug\net9.0\Order.Domain.pdb
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\Order.Application.csproj.AssemblyReference.cache
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\Order.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\Order.Application.AssemblyInfoInputs.cache
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\Order.Application.AssemblyInfo.cs
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\Order.Application.csproj.CoreCompileInputs.cache
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\Order.Application.sourcelink.json
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\Order.Ap.8554589A.Up2Date
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\Order.Application.dll
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\refint\Order.Application.dll
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\Order.Application.pdb
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Application\obj\Debug\net9.0\ref\Order.Application.dll

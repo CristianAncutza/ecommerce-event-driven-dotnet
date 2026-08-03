@@ -1,0 +1,6 @@
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Infrastructure\obj\Debug\net9.0\Order.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Infrastructure\obj\Debug\net9.0\Order.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Infrastructure\obj\Debug\net9.0\Order.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Infrastructure\obj\Debug\net9.0\Order.Infrastructure.AssemblyInfo.cs
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Infrastructure\obj\Debug\net9.0\Order.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\cancutza\Documents\Tier3 Project\ecommerce-event-driven-dotnet\Order.API\Order.Infrastructure\obj\Debug\net9.0\Order.Infrastructure.sourcelink.json
