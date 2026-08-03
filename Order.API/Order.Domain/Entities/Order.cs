@@ -30,4 +30,9 @@ public class Order
     {
         Status = status;
     }
+
+    public static Order Create(string customerId)
+    {
+        return new Order(customerId, 0); // O inicializando el total en 0 y calculándolo al agregar items
+    }
 }

@@ -1,38 +1,19 @@
-
 using Microsoft.EntityFrameworkCore;
-using Order.Domain.Entities;
+using Order.Domain.Common;
 
-namespace Order.Domain.Persistence;
-public class OrderDbContext : DbContext
+namespace Order.Infrastructure.Persistence
 {
-    public OrderDbContext(DbContextOptions<OrderDbContext> options) : base(options)
+    public class OrderDbContext : DbContext, IUnitOfWork
     {
-    }
+        public OrderDbContext(DbContextOptions<OrderDbContext> options) : base(options) { }
 
-    public DbSet<Order.Domain.Entities.Order> Orders => Set<Order.Domain.Entities.Order>();
-    public DbSet<OrderItem> OrderItems => Set<OrderItem>();
+        public DbSet<Order.Domain.Entities.Order> Orders => Set<Order.Domain.Entities.Order>();
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        base.OnModelCreating(modelBuilder);
-
-        modelBuilder.Entity<Order.Domain.Entities.Order>(entity =>
+        public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default)
         {
-            entity.HasKey(o => o.Id);
-            entity.Property(o => o.CustomerId).IsRequired().HasMaxLength(100);
-            entity.Property(o => o.TotalAmount).HasColumnType("decimal(18,2)");
-            entity.Property(o => o.Status).IsRequired().HasMaxLength(50);
-            
-            entity.HasMany(o => o.Items)
-                  .WithOne()
-                  .OnDelete(DeleteBehavior.Cascade);
-        });
-
-        modelBuilder.Entity<OrderItem>(entity =>
-        {
-            entity.HasKey(i => i.Id);
-            entity.Property(i => i.ProductName).IsRequired().HasMaxLength(150);
-            entity.Property(i => i.Price).HasColumnType("decimal(18,2)");
-        });
+            // Aquí puedes despachar eventos de dominio antes de guardar si usas DDD avanzado
+            var result = await base.SaveChangesAsync(cancellationToken);
+            return result > 0;
+        }
     }
 }
